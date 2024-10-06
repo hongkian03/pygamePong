@@ -70,7 +70,7 @@ while running :
             ball.vertv += speed_increment
 
     # check ball hit player1
-    if (player1.y <= ball.y <= (player1.y + player1.h)) and ((ball.x - ball.r) <= player1.x) :
+    if (player1.y <= ball.y <= (player1.y + player1.h)) and ((ball.x - ball.r) <= player1.x + player1.l) :
         ball.horv *= -1
         ball.horv += speed_increment
 
